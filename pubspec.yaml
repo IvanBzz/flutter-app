@@ -14,8 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   dio: ^5.7.0
   intl: ^0.20.2
-  time_scheduler_table:
-    path: ../time_scheduler_table/
+  time_scheduler_table: ^1.0.1
   http: ^1.2.2
 
 
