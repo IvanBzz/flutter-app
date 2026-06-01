@@ -16,6 +16,7 @@ dependencies:
   intl: ^0.20.2
   time_scheduler_table: ^1.0.1
   http: ^1.2.2
+  shelf: ^1.4.2
 
 
 dev_dependencies:

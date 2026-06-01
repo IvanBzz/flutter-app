@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -150,7 +151,7 @@ class RuzApi {
   RuzApi({Dio? dio}) : _dio = dio ?? Dio(BaseOptions(connectTimeout: const Duration(seconds: 12)));
 
   final Dio _dio;
-  bool useProxy = false;
+  bool useProxy = kIsWeb;
 
   String get _baseUrl => useProxy ? 'http://localhost:3000' : 'https://ruz.fa.ru/api';
 
